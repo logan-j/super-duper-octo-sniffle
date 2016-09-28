@@ -2,4 +2,4 @@ from app import app
 
 @app.route('/', methods=['GET'])
 def index():
-    return "more coming soon..."
+    return "I Love Shawn <3"

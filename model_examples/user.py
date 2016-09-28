@@ -1,7 +1,9 @@
 import bcrypt
 
 from database import db
-
+from flask_migrate import Migrate
+from app import app
+migrate = Migrate(app, db)
 
 class User(db.Model):
     __tablename__ = 'users'

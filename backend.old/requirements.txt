@@ -1,4 +1,0 @@
-Flask
-SQLAlchemy
-pytest
-psycopg2

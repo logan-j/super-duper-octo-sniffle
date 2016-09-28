@@ -1,5 +1,7 @@
 from database import db
-
+from app import app
+from flask_migrate import Migrate
+migrate = Migrate(app, db)
 class Feed(db.Model):
     __tablename__ = 'feeds'
 
