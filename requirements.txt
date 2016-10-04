@@ -4,3 +4,5 @@ sqlalchemy
 flask-migrate
 pytest
 bcrypt
+flask-login
+flask-bootstrap
