@@ -1,5 +1,4 @@
 from app import db
-from sqlalchemy.dialects.postgresql import UUID
 import uuid
 from random import randint
 
@@ -13,7 +12,7 @@ class Url(db.Model):
 
     id = db.Column(db.String, primary_key=True)
     url = db.Column(db.String, nullable=False)
-    user_id = db.Column(UUID(as_uuid=False), index=True)
+    user_id = db.Column(db.String, index=True)
 
     def __repr__(self):
         return "Url(id={id}, url={url})".format(id=self.id, url=self.url)

@@ -9,10 +9,12 @@ class Robot(db.Model):
         UUID(as_uuid=False),
         primary_key=True,
     )
-    
+    user_id = db.Column(db.String, nullable=False, index=True)
+
     name = db.Column(db.String)
 
-    def __init__(self, name=None, id=str(uuid.uuid4())):
+    def __init__(self, user_id, name=None, id=str(uuid.uuid4())):
+        self.user_id = user_id
         self.name = name
         self.id = id
 
