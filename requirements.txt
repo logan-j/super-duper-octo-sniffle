@@ -6,3 +6,4 @@ pytest
 bcrypt
 flask-login
 flask-bootstrap
+flask-stormpath
